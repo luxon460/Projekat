@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lux Auto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+        <h1> Lux Auto - Automobili za svaku priliku</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="Pocetna.html">Početna</a></li>
+                <li><a href="O nama.html">O nama</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Iznajmi svoj savršen automobil</h2>
+        <p>Vozi svoje autobombile iz snova u pristupačnim cenama</p>
+        <a href="Kontakt.html" class="cta-button">Rezerviši sada</a>
+    </section>
+
+    <main>
+        <section>
+            <h2>Naša flota</h2>
+            
+            <!-- FILTER BUTTONS -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Svi Automobili</button>
+                <button class="filter-btn" data-filter="economy">Ekonomični</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+                <button class="filter-btn" data-filter="luxury">Luksuzni</button>
+                <button class="filter-btn" data-filter="van">Kombi</button>
+                <button class="filter-btn" data-filter="electric">Električni</button>
+                <button class="filter-btn" data-filter="convertible">Kabriolet</button>
+            </div>
+            
+            <div class="fleet-container">
+                <div class="car-card" data-category="economy">
+                    <div class="car-image"><img src="/slike/ToyotaYaris.jpg" alt="Toyota Yaris"></div>
+                    <div class="car-info">
+                        <div class="car-name">Toyota Yaris</div>
+                        <div class="car-details">✓ 5 Sedišta | ✓ Ručni & Automatski</div>
+                        <div class="car-details">✓ 800km Domet</div>
+                        <div class="car-price">€20/dan</div>
+                        <button class="car-button">Rezerviši sada</button>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="suv">
+                    <div class="car-image"><img src="/slike/HondaCrv.jpg" alt="Honda CR-V"></div>
+                    <div class="car-info">
+                        <div class="car-name">Honda CR-V</div>
+                        <div class="car-details">✓ 5-7 Sedišta | ✓ Automatski</div>
+                        <div class="car-details">✓ Klima</div>
+                        <div class="car-price">€55/dan</div>
+                        <button class="car-button">Rezerviši sada</button>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="luxury">
+                    <div class="car-image"><img src="/slike/BMW5Series.jpg" alt="BMW 5 Series"></div>
+                    <div class="car-info">
+                        <div class="car-name">BMW 5 Series</div>
+                        <div class="car-details">✓ 5 Sedišta | ✓ Automatski</div>
+                        <div class="car-details">✓ Premium Opcije</div>
+                        <div class="car-price">€150/dan</div>
+                        <button class="car-button">Rezerviši sada</button>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="van">
+                    <div class="car-image"><img src="/slike/WwTransporter.jpg" alt="VW Transporter"></div>
+                    <div class="car-info">
+                        <div class="car-name">VW Transporter</div>
+                        <div class="car-details">✓ 8 Sedišta | ✓ Automatski</div>
+                        <div class="car-details">✓ Teretni Prostor</div>
+                        <div class="car-price">€65/dan</div>
+                        <button class="car-button">Rezerviši sada</button>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="electric">
+                    <div class="car-image"><img src="/slike/TeslaModel3.jpg" alt="Tesla Model 3"></div>
+                    <div class="car-info">
+                        <div class="car-name">Tesla Model 3</div>
+                        <div class="car-details">✓ 5 Sedišta | ✓ Automatski</div>
+                        <div class="car-details">✓ Eco-Friendly</div>
+                        <div class="car-price">€75/dan</div>
+                        <button class="car-button">Rezerviši sada</button>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="convertible">
+                    <div class="car-image"><img src="/slike/MercedesC63Cabrio.jpg" alt="Mercedes C63 Cabrio"></div>
+                    <div class="car-info">
+                        <div class="car-name">Mercedes C63 Cabrio</div>
+                        <div class="car-details">✓ 4 Sedišta | ✓ Automatski</div>
+                        <div class="car-details">✓ Otvaranje Krova</div>
+                        <div class="car-price">€120/dan</div>
+                        <button class="car-button">Rezerviši sada</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Zašto izabrati nas?</h2>
+            <div class="fleet-container">
+
+                <div class="car-card" style="background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);">
+                    <div class="car-info">
+                        <h3>✓ Najbolje Cene</h3>
+                        <p>Nudimo konkurentne cene bez skrivenih troškova. Pronađite idealan automobil za vaše potrebe.</p>
+                    </div>
+                </div>
+                <div class="car-card" style="background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);">
+                    <div class="car-info">
+                        <h3>✓ 24/7 Podrška</h3>
+                        <p>Dostupni smo 24 sata dnevno za sve vaše potrebe. Brzi odgovori i stručna pomoć.</p>
+                    </div>
+                </div>
+                <div class="car-card" style="background: linear-gradient(135deg, #fce4ec 0%, #fff3e0 100%);">
+                    <div class="car-info">
+                        <h3>✓ Kvalitetna flota</h3>
+                        <p>Sve naše vozila su redovno održavana i pregledana pre svakog najma.</p>
+                    </div>
+                </div>
+                <div class="car-card" style="background: linear-gradient(135deg, #f3e5f5 0%, #ede7f6 100%);">
+                    <div class="car-info">
+                        <h3>✓ Jednostavna Rezervacija</h3>
+                        <p>Brz i jednostavan proces rezervacije sa samo nekoliko kliklova.</p>
+                    </div>
+                </div>
+                <div class="car-card" style="background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);">
+                    <div class="car-info">
+                        <h3>✓ Fleksibilni Uslovi</h3>
+                        <p>Prilagođene opcije za kratkoročne i dugoročne najme prema vašim potrebama.</p>
+                    </div>
+                </div>
+                <div class="car-card" style="background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);">
+                    <div class="car-info">
+                        <h3>✓ Osigurani Automobili</h3>
+                        <p>Sva vozila dolaze sa potpunim osiguranjem za vašu sigurnost.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Lux Auto - Premium Car Rental</h3>
+        <p> Kontakt Telefon: +385 1 234 5678</p>
+        <p> Email: <a href="mailto:info@luxauto.com">info@luxauto.com</a></p>
+        <p> Adresa: Bulevar Despota Stefana 65, Beograd</p>
+        <p> Radno Vreme: Ponedeljak - Petak 8:00h - 20:00h, Subota 9:00h - 18:00h, Nedelja 10:00h - 17:00h</p>
+        <p>&copy; 2026 Lux Auto. Sva prava zadržana.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

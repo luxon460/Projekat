@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Lux Auto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <button class="theme-toggle" id="theme-toggle">🌙</button>
+        <h1> Lux Auto - Automobili za svaku priliku</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="Pocetna.html">Početna</a></li>
+                <li><a href="O nama.html">O nama</a></li>
+                <li><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Kontakt & Rezervacija</h2>
+            
+            <div class="fleet-container">
+                <div class="car-card">
+                    <div class="car-info">
+                        <h3> Telefon</h3>
+                        <p><a href="tel:+381123456788" style="color: #FFD700; font-weight: bold;">+381 1 234 5678</a></p>
+                        <p style="font-size: 14px; color: #666;">Dostupno 24/7</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-info">
+                        <h3> Email</h3>
+                        <p><a href="mailto:info@luxauto.com" style="color: #FFD700; font-weight: bold;">info@luxauto.com</a></p>
+                        <p style="font-size: 14px; color: #666;">Odgovaramo u što kraćem roku</p>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <div class="car-info">
+                        <h3>📍Lokacija</h3>
+                        <p><strong>Lux Auto</strong></p>
+                        <p style="font-size: 14px; color: #666;">Bulevar Despota Stefana 65, Beograd</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 40px;">Rezerviši Automobil</h3>
+            <div class="form-container">
+                <div id="form-message" style="margin-bottom: 20px; padding: 15px; border-radius: 8px; display: none; font-weight: bold; text-align: center;"></div>
+                <form id="reservation-form" action="">
+                    <label for="name">Ime *</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Adresa *</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Kontakt Telefon *</label>
+                    <input type="text" id="phone" name="phone">
+
+                    <label for="car-type">Tip Automobila *</label>
+                    <select id="car-type" name="car-type" required>
+
+                        <option value="">-- Izaberi tip Auta --</option>
+                        <option value="economy">Gradski (€35/dan)</option>
+                        <option value="suv">SUV (€55/dan)</option>
+                        <option value="luxury">Luksuzni (€85/dan)</option>
+                        <option value="van">Pikap (€65/dan)</option>
+                        <option value="electric">Električni (€75/dan)</option>
+                        <option value="convertible">Kupe (€120/dan)</option>
+                    </select>
+
+                    <label for="message">Dodatne napomene ili pitanja</label>
+                    <textarea id="message" name="message" placeholder="Ako imate bilo kakvih pitanja ili posebnih zahteva, molimo Vas da ih navedete ovde..."></textarea>
+
+                    <button style="margin-top: 20px;" type="submit" id="submit-btn" class="car-button">Rezerviši sada</button>
+                </form>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 40px;">Radno Vreme</h3>
+            <div style="text-align: center; padding: 20px; background: #f0f0f0; border-radius: 8px;">
+                <p><strong>Ponedeljak - Petak:</strong> 8:00h - 20:00h </p>
+                <p><strong>Subota:</strong> 9:00h - 18:00h </p>
+                <p><strong>Nedelja:</strong> 10:00h - 17:00h</p>
+                <p style="color: #666; margin-top: 10px;">Tu smo da pomognemo!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Lux Auto</h3>
+        <p> Kontakt Telefon: +381 1 234 5678</p>
+        <p> Email: <a href="mailto:info@luxauto.com">info@luxauto.com</a></p>
+            <p> Adresa: Bulevar Despota Stefana 65, Beograd</p>
+            <p> Radno Vreme: Ponedeljak - Petak 8:00h - 20:00h, Subota 9:00h - 18:00h, Nedelja 10:00h - 17:00h</p>
+        <p> &copy; 2026 Lux Auto. Sva prava zadržana.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
